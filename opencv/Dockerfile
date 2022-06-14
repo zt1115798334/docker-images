@@ -1,4 +1,4 @@
-FROM zt1115798334/centos7.9.2009-jdk1.8.0_332
+FROM zt1115798334/centos7.9.2009-jdk8u332
 
 RUN echo "export LC_ALL=en_US.UTF-8"  >>  /etc/profile \
     && source /etc/profile
