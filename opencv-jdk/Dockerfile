@@ -1,10 +1,10 @@
-FROM zt1115798334/centos7.9.2009-jdk8u332
+FROM openjdk:8u332-jdk-oraclelinux7
 
 RUN echo "export LC_ALL=en_US.UTF-8"  >>  /etc/profile \
     && source /etc/profile
 
 RUN set -eux; \
-    yum install -y \
+    yum -y install \
         make \
         gcc \
         gcc-c++ \
