@@ -22,7 +22,7 @@ RUN set -eux; \
     make; \
     make install; \
     cd /ffmpeg; \
-    ./configure --prefix=/usr/local/ffmpeg --enable-shared --enable-yasm --enable-libx264 --enable-gpl --enable-pthreads --extra-cflags=-I/usr/local/x264/include --extra-ldflags=-L/usr/local/x264/lib; \
+    ./configure --prefix=/usr/local/ --enable-shared --enable-yasm --enable-libx264 --enable-gpl --enable-pthreads --extra-cflags=-I/usr/local/x264/include --extra-ldflags=-L/usr/local/x264/lib; \
     make -j7; \
     make install;
 
